@@ -1,0 +1,12 @@
+import org.gradle.internal.jvm.Jvm;
+import org.gradle.util.GradleVersion;
+
+def currentGrl = GradleVersion.current()
+println "Gradle version: ${currentGrl.getVersion()}"
+
+def currentJvm = Jvm.current()
+println "Java version:  \t${currentJvm.getJavaVersion()}"
+println "Java home:     \t${currentJvm.getJavaHome()}"
+
+if (currentJvm.getJavaVersion() != JavaVersion.VERSION_17)
+    throw new GradleException("Java version should be 17")
