@@ -38,8 +38,8 @@ ext.includeProjects = { path ->
 }
 
 
-// ext.rootProject.name = 'myStandardStructure'
+// ext.rootProject.name = 'example'
 
-ext.includeProjects('myStandardStructure/debug')
-ext.includeProjects('myStandardStructure/framework')
+ext.includeProjects('example/debug')
+ext.includeProjects('example/framework')
 // include('app')
